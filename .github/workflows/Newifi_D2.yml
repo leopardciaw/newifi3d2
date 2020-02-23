@@ -10,11 +10,11 @@
 name: D2_1
 
 on:
-#   release:
-#     types: [published]
-   push:
-     branches:
-       - master
+   release:
+     types: [published]
+#   push:
+#     branches:
+#       - master
 #     paths:
 #       - 'd2.config'
 #  schedule:
