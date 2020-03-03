@@ -1,4 +1,4 @@
-# https://github.com/P3TERX/OpenWrt-Newifi_D2
+来源https://github.com/P3TERX/OpenWrt-Newifi_D2
 # OpenWrt firmware for Newifi D2
 
 Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
