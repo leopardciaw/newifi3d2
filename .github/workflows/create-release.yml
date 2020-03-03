@@ -10,7 +10,7 @@ name: Create release
 
 on:
   schedule:
-    - cron: 0 15 * * *
+    - cron: 18 15 * * *
 #  watch:
 #    types: started
 
@@ -27,7 +27,7 @@ jobs:
     - name: Create release
       uses: actions/create-release@v1
       env:
-        LEO_TOKEN: ${{ secrets.LEO_TOKEN }}
+        LEO_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
         tag_name: ${{ env.RELEASE_TAG }}
         body: 🚀 Automated build | 自动编译
