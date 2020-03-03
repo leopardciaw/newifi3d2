@@ -10,7 +10,7 @@ name: Create release
 
 on:
   schedule:
-    - cron: 18 15 * * *
+    - cron: 39 15 * * *
 #  watch:
 #    types: started
 
@@ -25,9 +25,9 @@ jobs:
         echo ::set-env name=RELEASE_TAG::"$(TZ=UTC-8 date +"%Y.%m.%d")"
 
     - name: Create release
-      uses: actions/create-release@v1
+      uses: softprops/action-gh-release@v1
       env:
-        LEO_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        LEO_TOKEN: ${{ secrets.LEO_TOKEN }}
       with:
         tag_name: ${{ env.RELEASE_TAG }}
         body: 🚀 Automated build | 自动编译
