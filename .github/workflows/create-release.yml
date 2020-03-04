@@ -25,9 +25,9 @@ jobs:
         echo ::set-env name=RELEASE_TAG::"$(TZ=UTC-8 date +"%Y.%m.%d")"
 
     - name: Create release
-      uses: leopard/action-release@v1
+      uses: softprops/action-gh-release@v1
       env:
-        LEO_TOKEN: ${{ secrets.LEO_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
         tag_name: ${{ env.RELEASE_TAG }}
         body: 🚀 Automated build | 自动编译
