@@ -9,15 +9,15 @@
 name: Build OpenWrt D2
 
 on:
-#  release:
-#    types: published
+  release:
+    types: published
 #  push:
 #    branches:
 #      - master
 #    paths:
 #      - '.config'
-  schedule:
-    - cron: 20 5 * * *
+#  schedule:
+#    - cron: 20 5 * * *
 #  watch:
 #    types: started
 
