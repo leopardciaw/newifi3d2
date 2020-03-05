@@ -10,7 +10,7 @@ name: Create release
 
 on:
   schedule:
-    - cron: 0 4 * * *
+    - cron: 40 4 * * *
 #  watch:
 #    types: started
 
@@ -29,5 +29,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
-        tag_name: ${{ env.RELEASE_TAG }}
+        tag_name: ${{ env.RELEASED_TAG }}
         body: 🚀 Automated build | 自动编译
