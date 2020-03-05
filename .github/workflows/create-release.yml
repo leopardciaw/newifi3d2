@@ -10,7 +10,7 @@ name: Create release
 
 on:
   schedule:
-    - cron: 30 7 * * *
+    - cron: 40 8 * * *
 #  watch:
 #    types: started
 
@@ -27,7 +27,7 @@ jobs:
     - name: Create release
       uses: softprops/action-gh-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.LEO_TOKEN }}
       with:
         tag_name: ${{ env.RELEASE_TAG }}
         body: 🚀 Automated build | 自动编译
