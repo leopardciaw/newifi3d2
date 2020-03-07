@@ -8,8 +8,12 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.7.1/g' package/base-files/files/bin/config_generate
 
+# 删除原主题包
+ rm -rf package/lean/luci-theme-argon
+# rm -rf openwrt/package/lean/luci-theme-netgear
+
 # Modify the version number
-sed -i 's/OpenWrt/P3TERX build $(date "+%Y.%m.%d") @ OpenWrt/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/OpenWrt/Leopard build $(date "+%Y.%m.%d") @ OpenWrt/g' package/lean/default-settings/files/zzz-default-settings
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -22,7 +26,7 @@ git clone https://github.com/leopardciaw/luci-app-koolddns.git package/lean/luci
 
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
-    echo 'CONFIG_KERNEL_BUILD_USER="P3TERX"' >>.config ||
+    echo 'CONFIG_KERNEL_BUILD_USER="Leopard"' >>.config ||
     sed -i 's@\(CONFIG_KERNEL_BUILD_USER=\).*@\1$"P3TERX"@' .config
 
 # Add kernel build domain
