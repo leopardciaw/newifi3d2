@@ -1,5 +1,6 @@
 # Auto build OpenWrt firmware for Newifi D2
 https://github.com/P3TERX/OpenWrt-Newifi_D2
+
 https://github.com/coolsnowwolf/lede
 
 Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
