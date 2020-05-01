@@ -36,4 +36,4 @@ git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/lu
 
 # 增加ssr
 # git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-git clone https://github.com/fw876/helloworld.git package/openwrt-packages/luci-app-ssr-plus
+git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
