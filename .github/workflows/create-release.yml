@@ -10,7 +10,7 @@ name: Create release
 
 on:
   schedule:
-    - cron: 45 13 * * *
+    - cron: 45 13 * * 5
 #  watch:
 #    types: started
 
