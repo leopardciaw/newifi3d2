@@ -23,7 +23,7 @@ on:
 #    paths:
 #      - 'config/Lean_LEDE_d2.config'
   schedule:
-    - cron: 30 7 * * *
+    - cron: 10 8 * * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
@@ -97,7 +97,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: SSH connection to Actions
-      uses: P3TERX/debugger-action@main
+      uses: tete1030/safe-debugger-action@master
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
     - name: Download package
