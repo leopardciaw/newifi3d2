@@ -17,13 +17,13 @@ on:
   repository_dispatch:
 #  release:
 #    types: published
-#  push:
-#    branches:
-#      - master
+  push:
+    branches:
+      - master
 #    paths:
 #      - 'config/Lean_LEDE_d2.config'
-  schedule:
-    - cron: 25 6 * * *
+#  schedule:
+#    - cron: 25 6 * * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
