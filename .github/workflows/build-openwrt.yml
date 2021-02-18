@@ -97,7 +97,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: SSH connection to Actions
-      uses: tete1030/safe-debugger-action@v1.01
+      uses: csexton/debugger-action@master
       if: env.SSH_ACTIONS == 'true'
 
     - name: Download package
