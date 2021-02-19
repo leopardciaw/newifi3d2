@@ -30,7 +30,7 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/leopardciaw/mylede
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: d2.config
