@@ -17,20 +17,21 @@ on:
   repository_dispatch:
 #  release:
 #    types: published
-  push:
-    branches:
-      - master
+#  push:
+#    branches:
+#      - master
 #    paths:
 #      - 'config/Lean_LEDE_d2.config'
-#  schedule:
-#    - cron: 5 6 * * *
+  schedule:
+    - cron: 0 1 * * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+#  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/leopardciaw/mylede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: d2.config
