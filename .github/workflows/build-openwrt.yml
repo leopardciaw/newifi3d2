@@ -23,7 +23,7 @@ on:
 #    paths:
 #      - 'config/Lean_LEDE_d2.config'
   schedule:
-    - cron: 0 1 * * *
+    - cron: 0 2 * * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
@@ -84,7 +84,11 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
+#      run: cd openwrt && ./scripts/feeds update -a
+      run: |
+        cd openwrt
+        chmod -R 777 ./scripts/feeds
+        ./scripts/feeds update -a
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
