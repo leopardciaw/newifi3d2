@@ -23,7 +23,7 @@ on:
 #    paths:
 #      - 'config/Lean_LEDE_d2.config'
   schedule:
-    - cron: 0 0 * * *
+    - cron: 20 5 * * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
@@ -37,7 +37,7 @@ env:
   CONFIG_FILE: d2.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: flase
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
