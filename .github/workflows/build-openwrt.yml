@@ -103,9 +103,10 @@ jobs:
 
     - name: SSH connection to Actions
   #      uses: csexton/debugger-action@master
-      uses: mxschmitt/action-tmate@v3.3
       if: env.SSH_ACTIONS == 'true'
-
+      uses: mxschmitt/action-tmate@v3
+      timeout-minutes: 30
+      
     - name: Download package
       id: package
       run: |
