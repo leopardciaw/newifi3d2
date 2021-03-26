@@ -23,7 +23,7 @@ on:
 #    paths:
 #      - 'config/Lean_LEDE_d2.config'
   schedule:
-    - cron: 0 7 */3 * *
+    - cron: 0 7 */5 * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
